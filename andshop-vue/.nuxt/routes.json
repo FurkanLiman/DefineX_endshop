@@ -1,0 +1,388 @@
+[
+  {
+    "name": "404",
+    "path": "/404",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\404.vue",
+    "chunkName": "pages/404",
+    "_name": "_3b643580"
+  },
+  {
+    "name": "about-us",
+    "path": "/about-us",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\about-us.vue",
+    "chunkName": "pages/about-us",
+    "_name": "_4b384e74"
+  },
+  {
+    "name": "admin",
+    "path": "/admin",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\admin\\\\index.vue",
+    "chunkName": "pages/admin/index",
+    "_name": "_495f7c8b"
+  },
+  {
+    "name": "blog",
+    "path": "/blog",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\blog\\\\index.vue",
+    "chunkName": "pages/blog/index",
+    "_name": "_01b2f890"
+  },
+  {
+    "name": "cart",
+    "path": "/cart",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\cart\\\\index.vue",
+    "chunkName": "pages/cart/index",
+    "_name": "_57ee850c"
+  },
+  {
+    "path": "/checkout",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\checkout.vue",
+    "chunkName": "pages/checkout",
+    "children": [
+      {
+        "name": "checkout",
+        "path": "",
+        "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\checkout\\\\index.vue",
+        "chunkName": "pages/checkout/index",
+        "_name": "_32ce40d8"
+      }
+    ],
+    "_name": "_6bf3e52e"
+  },
+  {
+    "name": "coming-soon",
+    "path": "/coming-soon",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\coming-soon.vue",
+    "chunkName": "pages/coming-soon",
+    "_name": "_740e2ce2"
+  },
+  {
+    "name": "contact-us",
+    "path": "/contact-us",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\contact-us\\\\index.vue",
+    "chunkName": "pages/contact-us/index",
+    "_name": "_dd90ef62"
+  },
+  {
+    "name": "electronics",
+    "path": "/electronics",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\electronics.vue",
+    "chunkName": "pages/electronics",
+    "_name": "_0efe023f"
+  },
+  {
+    "name": "faq",
+    "path": "/faq",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\faq.vue",
+    "chunkName": "pages/faq",
+    "_name": "_31564f44"
+  },
+  {
+    "name": "furniture",
+    "path": "/furniture",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\furniture.vue",
+    "chunkName": "pages/furniture",
+    "_name": "_2f35d33a"
+  },
+  {
+    "name": "grocery",
+    "path": "/grocery",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\grocery.vue",
+    "chunkName": "pages/grocery",
+    "_name": "_b40faa56"
+  },
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\login.vue",
+    "chunkName": "pages/login",
+    "_name": "_3eeba19e"
+  },
+  {
+    "name": "lookbook",
+    "path": "/lookbook",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\lookbook.vue",
+    "chunkName": "pages/lookbook",
+    "_name": "_3ecf00f0"
+  },
+  {
+    "name": "my-account",
+    "path": "/my-account",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\my-account\\\\index.vue",
+    "chunkName": "pages/my-account/index",
+    "_name": "_34f4ba0e"
+  },
+  {
+    "name": "order-success",
+    "path": "/order-success",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\order-success.vue",
+    "chunkName": "pages/order-success",
+    "_name": "_4a6406cc"
+  },
+  {
+    "name": "pharmacy",
+    "path": "/pharmacy",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\pharmacy.vue",
+    "chunkName": "pages/pharmacy",
+    "_name": "_7b905e1b"
+  },
+  {
+    "name": "privacy-policy",
+    "path": "/privacy-policy",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\privacy-policy.vue",
+    "chunkName": "pages/privacy-policy",
+    "_name": "_64b1a302"
+  },
+  {
+    "name": "profile",
+    "path": "/profile",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\profile\\\\index.vue",
+    "chunkName": "pages/profile/index",
+    "_name": "_3b6ef41e"
+  },
+  {
+    "name": "register",
+    "path": "/register",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\register.vue",
+    "chunkName": "pages/register",
+    "_name": "_a20a5fea"
+  },
+  {
+    "name": "shop",
+    "path": "/shop",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\shop\\\\index.vue",
+    "chunkName": "pages/shop/index",
+    "_name": "_96ff8838"
+  },
+  {
+    "name": "vendor-dashboard",
+    "path": "/vendor-dashboard",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\vendor-dashboard\\\\index.vue",
+    "chunkName": "pages/vendor-dashboard/index",
+    "_name": "_34eef4eb"
+  },
+  {
+    "name": "blog-blog-2",
+    "path": "/blog/blog-2",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\blog\\\\blog-2.vue",
+    "chunkName": "pages/blog/blog-2",
+    "_name": "_6fb49451"
+  },
+  {
+    "name": "blog-blog-3",
+    "path": "/blog/blog-3",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\blog\\\\blog-3.vue",
+    "chunkName": "pages/blog/blog-3",
+    "_name": "_6fc2abd2"
+  },
+  {
+    "name": "blog-blog-single-2",
+    "path": "/blog/blog-single-2",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\blog\\\\blog-single-2.vue",
+    "chunkName": "pages/blog/blog-single-2",
+    "_name": "_533ca8c4"
+  },
+  {
+    "name": "cart-cart-2",
+    "path": "/cart/cart-2",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\cart\\\\cart-2.vue",
+    "chunkName": "pages/cart/cart-2",
+    "_name": "_98727066"
+  },
+  {
+    "name": "cart-cart-3",
+    "path": "/cart/cart-3",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\cart\\\\cart-3.vue",
+    "chunkName": "pages/cart/cart-3",
+    "_name": "_98564164"
+  },
+  {
+    "name": "cart-cart-4",
+    "path": "/cart/cart-4",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\cart\\\\cart-4.vue",
+    "chunkName": "pages/cart/cart-4",
+    "_name": "_983a1262"
+  },
+  {
+    "name": "cart-empty-cart",
+    "path": "/cart/empty-cart",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\cart\\\\empty-cart.vue",
+    "chunkName": "pages/cart/empty-cart",
+    "_name": "_09cf1128"
+  },
+  {
+    "name": "contact-us-contact-us-2",
+    "path": "/contact-us/contact-us-2",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\contact-us\\\\contact-us-2.vue",
+    "chunkName": "pages/contact-us/contact-us-2",
+    "_name": "_d494c13a"
+  },
+  {
+    "name": "my-account-account-details",
+    "path": "/my-account/account-details",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\my-account\\\\account-details.vue",
+    "chunkName": "pages/my-account/account-details",
+    "_name": "_a58e6244"
+  },
+  {
+    "name": "my-account-account-info-edit",
+    "path": "/my-account/account-info-edit",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\my-account\\\\account-info-edit.vue",
+    "chunkName": "pages/my-account/account-info-edit",
+    "_name": "_1b52f7e5"
+  },
+  {
+    "name": "my-account-addresses",
+    "path": "/my-account/addresses",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\my-account\\\\addresses.vue",
+    "chunkName": "pages/my-account/addresses",
+    "_name": "_76109a44"
+  },
+  {
+    "name": "my-account-checkout-1",
+    "path": "/my-account/checkout-1",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\my-account\\\\checkout-1.vue",
+    "chunkName": "pages/my-account/checkout-1",
+    "_name": "_fee2d444"
+  },
+  {
+    "name": "my-account-checkout-2",
+    "path": "/my-account/checkout-2",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\my-account\\\\checkout-2.vue",
+    "chunkName": "pages/my-account/checkout-2",
+    "_name": "_fec6a542"
+  },
+  {
+    "name": "my-account-compare",
+    "path": "/my-account/compare",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\my-account\\\\compare.vue",
+    "chunkName": "pages/my-account/compare",
+    "_name": "_be0998be"
+  },
+  {
+    "name": "my-account-downloads",
+    "path": "/my-account/downloads",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\my-account\\\\downloads.vue",
+    "chunkName": "pages/my-account/downloads",
+    "_name": "_552898b2"
+  },
+  {
+    "name": "my-account-order-tracking",
+    "path": "/my-account/order-tracking",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\my-account\\\\order-tracking.vue",
+    "chunkName": "pages/my-account/order-tracking",
+    "_name": "_1060caca"
+  },
+  {
+    "name": "my-account-orders",
+    "path": "/my-account/orders",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\my-account\\\\orders.vue",
+    "chunkName": "pages/my-account/orders",
+    "_name": "_6ddb77d9"
+  },
+  {
+    "name": "my-account-wishlist",
+    "path": "/my-account/wishlist",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\my-account\\\\wishlist.vue",
+    "chunkName": "pages/my-account/wishlist",
+    "_name": "_68b793b9"
+  },
+  {
+    "name": "product-product-single-2",
+    "path": "/product/product-single-2",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\product\\\\product-single-2.vue",
+    "chunkName": "pages/product/product-single-2",
+    "_name": "_7e2e7d02"
+  },
+  {
+    "name": "product-product-single-3",
+    "path": "/product/product-single-3",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\product\\\\product-single-3.vue",
+    "chunkName": "pages/product/product-single-3",
+    "_name": "_7e3c9483"
+  },
+  {
+    "name": "shop-shop-2",
+    "path": "/shop/shop-2",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\shop\\\\shop-2.vue",
+    "chunkName": "pages/shop/shop-2",
+    "_name": "_2978bdf9"
+  },
+  {
+    "name": "shop-shop-3",
+    "path": "/shop/shop-3",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\shop\\\\shop-3.vue",
+    "chunkName": "pages/shop/shop-3",
+    "_name": "_2986d57a"
+  },
+  {
+    "name": "shop-shop-4",
+    "path": "/shop/shop-4",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\shop\\\\shop-4.vue",
+    "chunkName": "pages/shop/shop-4",
+    "_name": "_2994ecfb"
+  },
+  {
+    "name": "shop-shop-5",
+    "path": "/shop/shop-5",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\shop\\\\shop-5.vue",
+    "chunkName": "pages/shop/shop-5",
+    "_name": "_29a3047c"
+  },
+  {
+    "name": "vendor-dashboard-add-product",
+    "path": "/vendor-dashboard/add-product",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\vendor-dashboard\\\\add-product.vue",
+    "chunkName": "pages/vendor-dashboard/add-product",
+    "_name": "_40353e9c"
+  },
+  {
+    "name": "vendor-dashboard-order",
+    "path": "/vendor-dashboard/order",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\vendor-dashboard\\\\order.vue",
+    "chunkName": "pages/vendor-dashboard/order",
+    "_name": "_4db9b567"
+  },
+  {
+    "name": "vendor-dashboard-product",
+    "path": "/vendor-dashboard/product",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\vendor-dashboard\\\\product.vue",
+    "chunkName": "pages/vendor-dashboard/product",
+    "_name": "_4afda648"
+  },
+  {
+    "name": "vendor-dashboard-profile",
+    "path": "/vendor-dashboard/profile",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\vendor-dashboard\\\\profile.vue",
+    "chunkName": "pages/vendor-dashboard/profile",
+    "_name": "_a30513fc"
+  },
+  {
+    "name": "vendor-dashboard-setting",
+    "path": "/vendor-dashboard/setting",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\vendor-dashboard\\\\setting.vue",
+    "chunkName": "pages/vendor-dashboard/setting",
+    "_name": "_c6c561ae"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_16e28c1a"
+  },
+  {
+    "name": "blog-slug",
+    "path": "/blog/:slug",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\blog\\\\_slug.vue",
+    "chunkName": "pages/blog/_slug",
+    "_name": "_05203b20"
+  },
+  {
+    "name": "product-id",
+    "path": "/product/:id?",
+    "component": "C:\\\\Users\\\\liman\\\\Desktop\\\\DefineX\\\\Final\\\\originalFull\\\\DefineX-BootCamp_TumKodlar-Dokumanlar\\\\definex\\\\8.gun\\\\andshop-vue\\\\pages\\\\product\\\\_id.vue",
+    "chunkName": "pages/product/_id",
+    "_name": "_45fb47da"
+  }
+]

@@ -1,0 +1,148 @@
+/* Favori butonları için global stiller */
+.action.wishlist:hover {
+  color: #ff4c4c !important;
+  animation: heartbeat 0.5s ease-in-out;
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+/* Favorilere eklenmiş ürünler için stil */
+.in-wishlist .action.wishlist,
+.in-wishlist .list-wishlist-btn {
+  color: #ff4c4c !important;
+}
+
+.in-wishlist .action.wishlist i,
+.in-wishlist .list-wishlist-btn i {
+  font-weight: 900; /* Solid heart icon */
+}
+
+/* Ürün kartları için global stiller - her sayfa için geçerli */
+.product_wrappers_one {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  border: 1px solid #e9e9e9 !important;
+  border-radius: 6px !important;
+  overflow: hidden !important;
+  transition: all 0.3s ease !important;
+  background: #fff !important;
+  margin-bottom: 20px !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05) !important;
+}
+
+.product_wrappers_one:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+  transform: translateY(-5px) !important;
+  border-color: #ddd !important;
+}
+
+.product_wrappers_one .thumb {
+  position: relative !important;
+  overflow: hidden !important;
+  background-color: #f8f8f8 !important;
+}
+
+.product_wrappers_one .thumb img {
+  width: 100% !important;
+  height: 300px !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  z-index: 1 !important;
+  transition: transform 0.5s ease !important;
+  padding: 10px !important;
+}
+
+.product_wrappers_one:hover .thumb img {
+  transform: scale(1.05) !important;
+}
+
+.product_wrappers_one .content {
+  padding: 15px !important;
+  background-color: #fff !important;
+  flex-grow: 1 !important;
+}
+
+.product_wrappers_one .title h4 {
+  height: 48px !important;
+  overflow: hidden !important;
+  margin-bottom: 10px !important;
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+}
+
+/* Grid düzeni için eşit yükseklikteki kartlar */
+.product-grid-container .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-grid-container .col {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.product-grid-container .product_wrappers_one {
+  width: 100%;
+}
+
+/* Ana sayfa ve diğer sayfalardaki ürün listelerinde kullanılan grid container özellikleri */
+.product-grid-container {
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+
+/* Ana sayfa dahil tüm ürün kartları için ek stiller */
+.product-grid-container .product_wrappers_one,
+#hot_Product_area .product_wrappers_one {
+  border: 1px solid #e9e9e9 !important;
+  border-radius: 6px !important;
+  overflow: hidden !important;
+  transition: all 0.3s ease !important;
+  background: #fff !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05) !important;
+  margin-bottom: 30px !important;
+}
+
+.product-grid-container .product_wrappers_one:hover,
+#hot_Product_area .product_wrappers_one:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+  transform: translateY(-5px) !important;
+  border-color: #ddd !important;
+}
+
+.product-grid-container .product_wrappers_one .thumb {
+  position: relative;
+  overflow: hidden;
+  background-color: #f8f8f8;
+}
+
+.product-grid-container .product_wrappers_one .thumb img {
+  width: 100% !important;
+  height: 300px !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  z-index: 1;
+  transition: transform 0.5s ease;
+}
+
+.product-grid-container .product_wrappers_one:hover .thumb img {
+  transform: scale(1.05);
+}
+
+.product-grid-container .product_wrappers_one .content {
+  padding: 15px;
+  background-color: #fff;
+}
+
+.product-grid-container .product_wrappers_one .title h4 {
+  height: 48px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+} 

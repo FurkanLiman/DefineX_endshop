@@ -1,0 +1,25 @@
+# Favoriler Tablosu Migration'ı için Command Prompt komutları
+
+# Visual Studio Package Manager Console'da çalıştırın:
+Add-Migration AddWishlistTable -Context ProductDbContext -OutputDir Migrations
+
+# Veritabanını güncellemek için:
+Update-Database -Context ProductDbContext
+
+# Veya .NET CLI kullanarak çalıştırın:
+dotnet ef migrations add AddWishlistTable --context ProductDbContext --output-dir Migrations
+dotnet ef database update --context ProductDbContext
+
+# Güncellenmiş sorgu ile SQL Server tablosu oluşturmak için:
+```sql
+CREATE TABLE [Wishlists] (
+    [Id] INT IDENTITY(1,1) NOT NULL,
+    [UserId] INT NOT NULL,
+    [ProductIds] NVARCHAR(MAX) NOT NULL DEFAULT '[]',
+    CONSTRAINT [PK_Wishlists] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Wishlists_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([Id]) ON DELETE CASCADE
+);
+
+-- Bir kullanıcının birden fazla wishlist kaydı olmaması için index ekleyelim
+CREATE UNIQUE INDEX [IX_Wishlists_UserId] ON [Wishlists] ([UserId]);
+``` 

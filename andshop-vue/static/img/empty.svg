@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Empty State</title>
+    <g id="Empty-State" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Background" fill="#F5F5F5" cx="60" cy="60" r="60"></circle>
+        <g id="Empty-Box" transform="translate(30.000000, 25.000000)" fill-rule="nonzero">
+            <path d="M60,25 L60,70 L0,70 L0,25 L60,25 Z" id="Box-Bottom" fill="#E0E0E0"></path>
+            <path d="M30,0 L60,25 L0,25 L30,0 Z" id="Box-Top" fill="#EEEEEE"></path>
+            <path d="M30,35 C27.2386,35 25,37.2386 25,40 C25,42.7614 27.2386,45 30,45 C32.7614,45 35,42.7614 35,40 C35,37.2386 32.7614,35 30,35 Z" id="Circle" fill="#CCCCCC"></path>
+            <path d="M20,50 L40,50 L40,55 L20,55 L20,50 Z" id="Line-1" fill="#CCCCCC"></path>
+            <path d="M15,60 L45,60 L45,65 L15,65 L15,60 Z" id="Line-2" fill="#CCCCCC"></path>
+        </g>
+    </g>
+</svg> 
