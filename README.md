@@ -8,6 +8,8 @@ AndShop, Vue.js/Nuxt.js frontend ve .NET Core Web API backend kullanılarak geli
 
 Proje iki ana bileşenden oluşmaktadır:
 
+![Editor _ Mermaid Chart-2025-04-02-093346](https://github.com/user-attachments/assets/d3f708a5-77fc-4b17-9e54-2aea456abbd8)
+
 ### 1. Backend API (andshop-api)
 - .NET Core 6.0 tabanlı Microservice mimarisi
 - Microsoft SQL Server veritabanı entegrasyonu
@@ -63,7 +65,7 @@ Proje iki ana bileşenden oluşmaktadır:
 - .NET SDK 6.0 veya üzeri
 - Node.js 14.x veya üzeri
 - npm veya yarn
-- Microsoft SQL Server (LocalDB veya tam versiyon)
+- Microsoft SQL Server (2019 veya üzeri)
 
 ### Backend API Kurulumu
 
@@ -73,22 +75,23 @@ git clone <repo-url>
 cd andshop-api
 ```
 
-2. Veritabanı bağlantı dizesini `appsettings.json` dosyasında yapılandırın:
+2. Veritabanını SQL Script ile kurun:
+   - SQL Server Management Studio (SSMS) veya başka bir SQL istemcisini açın
+   - Proje kök dizinindeki `DatabaseCreateScript.sql` dosyasını açın
+   - Scripti çalıştırın (F5 tuşu veya Execute butonu ile)
+   - Script, `AndShopDB` veritabanını oluşturacak ve örnek verilerle dolduracaktır
+
+3. Veritabanı bağlantı dizesini `andshop-api/AndShop.ProductService/appsettings.json` dosyasında yapılandırın:
 ```json
 "ConnectionStrings": {
   "DefaultConnection": "Server=localhost;Database=AndShopDB;Trusted_Connection=True;MultipleActiveResultSets=true"
 }
 ```
 
-3. Migration'ları çalıştırın:
-```bash
-dotnet ef migrations add InitialCreate
-dotnet ef database update
-```
-
 4. API'yi başlatın:
 ```bash
-dotnet run --project AndShop.ProductService
+cd AndShop.ProductService
+dotnet run
 ```
 
 5. API swagger belgeleri şu adreste erişilebilir:
@@ -129,93 +132,31 @@ yarn dev
 http://localhost:3000
 ```
 
-## Veritabanı Kurulum ve Migration
+## Veritabanı Kurulumu
 
-Veritabanını kurmanın iki yolu bulunmaktadır:
+Veritabanını kurulum işlemi `DatabaseCreateScript.sql` dosyası kullanılarak gerçekleştirilir:
 
-### 1. Entity Framework Core Migration Kullanımı
+### SQL Script Dosyası ile Kurulum
 
-Entity Framework Core migration'ları kullanarak veritabanını otomatik oluşturabilirsiniz:
+Proje için hazırlanmış kapsamlı bir SQL script dosyası bulunmaktadır:
 
-```bash
-cd andshop-api
-dotnet ef migrations add InitialCreate
-dotnet ef database update
-```
+1. SQL Server Management Studio'yu (SSMS) açın
+2. SSMS'e SQL Server bilgileriniz ile giriş yapın
+3. `File > Open > File` menüsünden veya `Ctrl+O` kısayol tuşu ile `DatabaseCreateScript.sql` dosyasını açın
+4. Script açıldığında, `Execute` butonuna tıklayın veya `F5` tuşuna basın
+5. Script çalıştığında, `AndShopDB` veritabanı oluşturulacak ve gerekli tablolar ile örnek veriler eklenecektir
 
-### 2. SQL Script Dosyaları ile Kurulum
+### Olası Hatalar ve Çözümleri:
 
-Alternatif olarak, projedeki hazır SQL script dosyalarını kullanabilirsiniz:
+- **"Database already exists" hatası**: Eğer `AndShopDB` veritabanı zaten varsa, scripti çalıştırmadan önce bu veritabanını silmeniz gerekebilir:
+  ```sql
+  USE [master]
+  GO
+  DROP DATABASE IF EXISTS [AndShopDB]
+  GO
+  ```
 
-#### A. Tek SQL Dosyası ile Tam Kurulum
-
-Bu yöntem, tüm veritabanı şemasını tek bir adımda oluşturur:
-
-1. Yeni bir veritabanı oluşturun (Örn: `AndShopDB`)
-2. Aşağıdaki SQL script dosyasını çalıştırın:
-
-```bash
-# Tüm veritabanı şemasını ve tabloları oluşturur
-sqlcmd -S [sunucu_adı] -d AndShopDB -i andshop-api/AndShop.ProductService/complete-database-setup.sql
-```
-
-#### B. Adım Adım SQL Script'leri ile Kurulum
-
-Bu yöntem, veritabanı şemasını adım adım oluşturmak isterseniz kullanılabilir:
-
-1. Yeni bir veritabanı oluşturun (Örn: `AndShopDB`)
-2. Aşağıdaki SQL script dosyalarını sırasıyla çalıştırın:
-
-```bash
-# Temel veritabanı yapısını oluşturur
-sqlcmd -S [sunucu_adı] -d AndShopDB -i andshop-api/AndShop.ProductService/migrate.sql
-
-# Adres tablosu oluşturma ve güncelleme
-sqlcmd -S [sunucu_adı] -d AndShopDB -i andshop-api/AndShop.ProductService/addresses-migration.sql
-sqlcmd -S [sunucu_adı] -d AndShopDB -i andshop-api/AndShop.ProductService/update-address-model.sql
-
-# Örnek veri ekleme
-sqlcmd -S [sunucu_adı] -d AndShopDB -i andshop-api/AndShop.ProductService/addresses-data.sql
-sqlcmd -S [sunucu_adı] -d AndShopDB -i andshop-api/AndShop.ProductService/orders-update.sql
-```
-
-*Not 1: `[sunucu_adı]` yerine kendi SQL Server sunucunuzun adını yazın.*
-
-*Not 2: Önceki `migrate.sql` dosyasında bazı tablolarda tutarsızlıklar olabilir. Bu durumda, tüm veritabanını oluşturmak için `complete-database-setup.sql` dosyası tercih edilmelidir.*
-
-### 3. Örnek Veri Ekleme
-
-Veritabanını oluşturduktan sonra, test edebilmeniz için örnek verileri ekleyebilirsiniz:
-
-```bash
-# Örnek test verilerini ekler (kategoriler, ürünler, kullanıcılar, siparişler vb.)
-sqlcmd -S [sunucu_adı] -d AndShopDB -i andshop-api/AndShop.ProductService/data-sample.sql
-```
-
-Bu örnek veri scripti şunları içerir:
-- 5 farklı kategori
-- 8 örnek ürün
-- 4 test kullanıcısı (admin ve normal kullanıcılar)
-- 4 örnek adres
-- 3 indirim kuponu
-- 3 sipariş ve sipariş detayları
-- 5 ürün değerlendirmesi
-
-*Not: Örnek verileri, veritabanı şeması kurulduktan sonra ekleyin.*
-
-### 4. Migration Kontrol ve Yönetimi
-
-Migration durumunu kontrol etmek için:
-
-```bash
-dotnet ef migrations list
-```
-
-Migration'ları geri almak için:
-
-```bash
-dotnet ef database update [previous_migration_name]
-```
+- **SQL Dosyasının Çalışmaması**: Eğer script dosyası çalışmazsa, SSMS'de SQL dosyasındaki komutları adım adım uygulayabilirsiniz.
 
 ### Veritabanı Bağlantı Ayarları
 
@@ -223,7 +164,14 @@ dotnet ef database update [previous_migration_name]
 
 ```json
 "ConnectionStrings": {
-  "DefaultConnection": "Server=[sunucu_adı];Database=AndShopDB;Trusted_Connection=True;MultipleActiveResultSets=true"
+  "DefaultConnection": "Server=localhost;Database=AndShopDB;Trusted_Connection=True;MultipleActiveResultSets=true"
+}
+```
+
+Eğer SQL Server Authentication kullanıyorsanız:
+```json
+"ConnectionStrings": {
+  "DefaultConnection": "Server=localhost;Database=AndShopDB;User ID=your_username;Password=your_password;MultipleActiveResultSets=true"
 }
 ```
 
@@ -233,8 +181,8 @@ Projenin düzgün çalıştığını test etmek için:
 
 1. Backend API'yi çalıştırın:
 ```bash
-cd andshop-api
-dotnet run --project AndShop.ProductService
+cd andshop-api/AndShop.ProductService
+dotnet run
 ```
 
 2. Frontend uygulamasını başlatın:
@@ -246,8 +194,8 @@ npm run dev
 3. Tarayıcınızda `http://localhost:3000` adresine gidin
 
 4. Örnek kullanıcı hesapları ile giriş yapabilirsiniz:
-   - Admin: admin@andshop.com / şifre: Admin123!
-   - Test Kullanıcı: test@andshop.com / şifre: Test123!
+   - Admin: admin@mail.com / şifre: 123456!
+   - Test Kullanıcı: test@mail.com / şifre: 123456!
 
 5. API endpointlerini test etmek için Swagger belgelerini kullanın:
 ```
@@ -255,6 +203,8 @@ http://localhost:5000/swagger
 ```
 
 ## Veritabanı Şeması
+
+![Editor _ Mermaid Chart-2025-04-02-094453](https://github.com/user-attachments/assets/aed0768f-be19-413c-80c2-b8744189a1be)
 
 Veritabanı aşağıdaki tablolardan oluşmaktadır:
 
@@ -339,15 +289,3 @@ Veritabanı aşağıdaki tablolardan oluşmaktadır:
    - Sayfa yapıları pages/ klasöründe bulunmaktadır
    - Vuex store yapılandırması store/ klasöründe tanımlanmıştır
    - API istekleri services/ ve api/ klasörlerinde yönetilmektedir
-
-## Katkıda Bulunma
-
-1. Repoyu fork edin
-2. Feature branch oluşturun (`git checkout -b feature/yeni-ozellik`)
-3. Değişikliklerinizi commit edin (`git commit -m 'Yeni özellik eklendi'`)
-4. Branch'inizi push edin (`git push origin feature/yeni-ozellik`)
-5. Pull Request oluşturun
-
-## Lisans
-
-Bu proje [MIT Lisansı](LICENSE) altında lisanslanmıştır. 
